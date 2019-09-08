@@ -1,0 +1,9 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Welcome {{ app.user.displayName }}!</h1>
+
+    {{ dump(app.user.linkedProviderData) }}
+
+    <a href="{{ path('logout') }}">Logout</a>
+{% endblock %}
