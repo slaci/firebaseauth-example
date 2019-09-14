@@ -38,6 +38,7 @@ Facebook Auth
 into the `.env.local` file's corresponding variables
 * In the `Facebook Login` admin, add the redirect url: `https://yoursite/facebook-callback`. It must be https, otherwise
 it won't work sadly!
+* Enable Facebook login in the Firebase console: Authentication > Sign-in method > Facebook.
 
 Where to look
 =============
