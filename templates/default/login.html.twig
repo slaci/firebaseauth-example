@@ -2,8 +2,13 @@
 
 {% block body %}
     {% if error is not empty %}
-        <div>{{ error }}</div>
+        <div style="color: red;">{{ error }}</div>
     {% endif %}
 
-    <a href="{{ auth_url }}">Google Login</a>
+    <div>
+        <a href="{{ auth_url }}">Google Login</a>
+    </div>
+    <div>
+        <a href="{{ facebook_auth_url }}">Facebook Login</a>
+    </div>
 {% endblock %}

@@ -14,6 +14,8 @@ security:
             guard:
                 authenticators:
                     - App\Security\Guard\GoogleLoginGuard
+                    - App\Security\Guard\FacebookLoginGuard
+                entry_point: App\Security\Guard\GoogleLoginGuard
 
             # activate different ways to authenticate
             # https://symfony.com/doc/current/security.html#firewalls-authentication
